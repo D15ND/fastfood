@@ -16,7 +16,8 @@ p {
 }
 
 .wrapper {
-  max-width: 1140px; /* Максимальная ширина контента на всей странице  */
+  box-sizing: border-box;
+  max-width: 1140px; /* Максимальная ширина контента на всей странице [правильно было бы прибавить падинг из пункта 22 в обе стороны(15+15) и задать 1170px]  */
   margin: 0 auto; /* Выравнивание всего контента слева и справа, тк по дефу есть маржены справа */
   padding: 0 15px; /* Добавление отступов по сторонам для "красоты" при сжатии страницы, чтоб не упирались в стенки браузерного окна */
 }
@@ -105,6 +106,7 @@ header {
 .weclom__description {
   font-size: 18px;
   margin: 40px 0;
+  opacity: 0.7;
 }
 
 .foodlist {
@@ -144,4 +146,60 @@ header {
 
 .foodlist__card-description {
   font-size: 16px;
+  opacity: 0.7;
+}
+
+.order {
+  background: #312F30;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.order__img {
+  max-width: 470px;
+}
+
+.order__subtitle {
+  font-size: 44px;
+  font-weight: 500;
+  margin: 24px 0;
+}
+
+.order__description {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.order__price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #F6762C;
+}
+
+.order__price + .order__price {
+  margin-left: 3px;
+}
+
+.order__price-old {
+  font-size: 16px;
+  font-weight: 500;
+  color:#F6762C;
+  opacity: 0.5;
+  text-decoration-line: line-through;
+}
+
+.order .btn {
+  margin-top: 10px;
+}
+
+.order__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__information {
+  width: 370px;
+  padding-right: 90px;
 }
