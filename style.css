@@ -11,6 +11,10 @@ h1 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .wrapper {
   max-width: 1140px; /* Максимальная ширина контента на всей странице  */
   margin: 0 auto; /* Выравнивание всего контента слева и справа, тк по дефу есть маржены справа */
@@ -101,4 +105,43 @@ header {
 .weclom__description {
   font-size: 18px;
   margin: 40px 0;
+}
+
+.foodlist {
+  padding: 100px 0;
+}
+
+.foodlist__card {
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden; /* обрезает карточку, чтоб картинка сверху получила закругление */
+  background: #312F30;
+  text-align: center;
+}
+
+.foodlist__img {
+  max-width: 100%; /* Ужимаем по размерам карточки[блока] на всю его ширину, т.е. делаем из большой картинки в размер карточки */
+  height: 175px; /* В карточках лучше задавать высоту для картинок, чтоб все были в один размер в ряду */
+  object-fit: cover; /* Добавляет пропорциональность картинкам в случае ее увелчения из-за масштабирования, обрезает по краям */
+}
+
+.foodlist .wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap; /* переносит на новый ряд картки, если сжимать окно браузера */
+}
+
+.foodlist__text-wrapper {
+  padding: 30px 20px;
+}
+
+.foodlist__card-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.foodlist__card-description {
+  font-size: 16px;
 }
