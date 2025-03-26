@@ -1,14 +1,20 @@
 body {
-  margin: 0;
+  margin: 0; /* Убрать все дефолтные отступы */
   font-family: "Roboto", sans-serif;
   background-color: #1C1C1C;
   color: #fff;
 }
 
+h1 {
+  font-size: 58px;
+  font-weight: 500;
+  margin: 0;
+}
+
 .wrapper {
-  max-width: 1140px; /* Максимальная ширина конента на всей странице  */
+  max-width: 1140px; /* Максимальная ширина контента на всей странице  */
   margin: 0 auto; /* Выравнивание всего контента слева и справа, тк по дефу есть маржены справа */
-  padding: 0 15px; /*Добавление отступов по сторонам для "красоты" при сжатии страницы, чтоб не упирались в стенки браузерного окна */
+  padding: 0 15px; /* Добавление отступов по сторонам для "красоты" при сжатии страницы, чтоб не упирались в стенки браузерного окна */
 }
 
 .header__wrapper {
@@ -68,4 +74,31 @@ header {
 
 .btn:hover {
   font-size: 17px;
+}
+
+.welcom {
+  box-sizing: border-box; /* Взаимодействуте с отступами */
+  min-height: 100vh; /* Секцию расстягивает на весь экран */
+  margin-top: -100px;
+  background-image: url(./images/burger_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Расстягивает картинку на весь экран */
+  background-position: center;
+}
+
+.welcom__information {
+  width: 555px;
+  /* margin: 0 auto; */
+  padding: 220px 0;
+}
+
+.welcom__prev {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.weclom__description {
+  font-size: 18px;
+  margin: 40px 0;
 }
