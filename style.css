@@ -343,3 +343,48 @@ header {
   font-weight: 500;
   margin: 0;
 }
+
+.footer {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__box-link {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.footer__list-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__list-item  {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 20px;
+  padding-top: 5px;
+}
+
+.footer__logo {
+  padding-bottom: 20px;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
