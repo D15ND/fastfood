@@ -327,3 +327,19 @@ header {
 .feedback__subtitle {
   margin-bottom: 2px;
 }
+
+.download {
+  background-color:#312F30;
+}
+
+.download .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px;
+}
+
+.download__subtitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
