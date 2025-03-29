@@ -287,3 +287,43 @@ header {
   height: 40px;
   font-size: 12px;
 }
+
+.feedback .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin-bottom: 200px;
+}
+
+.feedback__img {
+  max-width: 365px;
+}
+
+.feedback__info {
+  width: 370px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.feedback__description {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.feedback__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.feedback__plustitle {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.feedback__info-img {
+  padding-bottom: 30px;
+}
+
+.feedback__subtitle {
+  margin-bottom: 2px;
+}
